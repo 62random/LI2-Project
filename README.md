@@ -1,4 +1,4 @@
-#LI2 - Project
+# LI2 - Project
 
 This was an assignment for a course in which we had to develop a roguelike game. One of the objective of this course was to use our knowledge of Imperative Programming. 
 
