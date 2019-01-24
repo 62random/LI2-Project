@@ -1,0 +1,14 @@
+digraph "estado"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="estado",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" trapdoor" ,fontname="Helvetica"];
+  Node2 [label="posicao",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structposicao.html",tooltip="Estrutura que armazena uma posição. "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" inimigo\nobstaculo" ,fontname="Helvetica"];
+  Node3 [label="npc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnpc.html",tooltip="Estrutura que descreve uma non playable character. "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prevpos\npos" ,fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" jog" ,fontname="Helvetica"];
+  Node4 [label="player",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structplayer.html",tooltip="Estrutura que descreve o jogador. "];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prevpos\npos" ,fontname="Helvetica"];
+}
